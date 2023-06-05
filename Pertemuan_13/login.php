@@ -1,13 +1,13 @@
 <?php
 session_start();
-Include 'koneksi.php';
+include 'koneksi.php';
 
-//menangkap data pada tabel admin dengan username dan password yang sesuai
+//menangkap data yang dikirim dari form login
 $username = $_POST['username'];
 $password = $_POST['password'];
 
 //menyeleksi data pada tabel admin dengan username dan password yang sesuai
-$data = mysqli_query($koneksi, "SELECT * FROM bljr_login( WHERE username='$username' and password='$password'");
+$data = mysqli_query($koneksi, "SELECT * FROM bljr_login WHERE username='$username' and password='$password'");
 
 //menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($data);

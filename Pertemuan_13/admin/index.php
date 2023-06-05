@@ -1,6 +1,6 @@
 <html> 
     <head>
-        <title> Tutorial Cara Membuat Login Dengan PHP MySQLi</title>
+        <title> Tutorial Cara Membuat Login Dengan PHP MySQLi - Page Admin</title>
 </head>
 <body> 
     <h2>Halaman Admin</h2>
